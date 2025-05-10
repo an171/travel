@@ -1,0 +1,90 @@
+@media (max-width: 1000px) {
+    header {
+        background-position: center;
+        height: 50vh;
+    }
+    header div {
+        height: 50vh;
+    }
+    header h1 {
+        font-size: 10vw;
+    }
+    #Alaska {
+        flex-direction: column;
+    }
+    #left {
+        width: 100%;
+        font-size: 2em;
+    }
+    #right {
+        width: 100%;
+        font-size: 1.2em;
+    }
+    #Alaska button {
+        padding: 10px 20px;
+        background-color:  #f7c20d; 
+    }
+    #Chinees{
+        flex-direction: column;
+        gap: 50px
+    }
+    #Chinees h2{
+        font-size: 7vw;
+    }
+    #Chinees div{
+        width: 100%;
+    }
+    #Chinees p{
+        font-size: 3vw;
+        line-height: 1.5;
+    }
+    #Chinees button{
+        padding: 15px 30px;
+        font-size: 3vw;
+    }
+    #Chinees img{
+        width: 70%;
+    }
+    #Japan{
+        flex-direction: column;
+    }
+    #Japan img{
+        width: 100%;
+    }
+    #Japan div{
+        width: 100%;
+        background-color: #eac0ce;
+        padding: 15% 5%;
+        box-sizing: border-box;
+    }
+    #Japan h2{
+        text-align: center;
+        font-size: 5vw;
+    }
+    #Egypt {
+        flex-direction: column;
+        padding: 0;
+    }
+    #Egypt #info{
+        width: 100%;
+        height: fit-content;
+    }
+    #Egypt img{
+        width: 100%;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        width:100%;
+        border: none;
+        /* border-bottom: 2px solid #506c5d; */
+        font-size: 6vw;
+        background-color: #506c5d;
+        color:whitesmoke
+    }
+    nav a:hover{
+        background-color: white;
+        color: #506c5d;
+    } 
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <table id="grid">
+         <thead>
+         <tr>
+         <th data-type="number">Возраст</th>
+         <th data-type="string">Имя</th>
+         </tr>
+         </thead>
+         <tbody>
+         <tr>
+         <td>5</td>
+         <td>Вася</td>
+         </tr>
+         <tr>
+         <td>10</td>
+         <td>Петя</td>
+         </tr>
+         <tr>
+         <td>1</td>
+         <td>Илья</td>
+         </tr>
+         <tr>
+         <td>9</td>
+         <td>Маша</td>
+         </tr>
+         <tr>
+         <td>12</td>
+         <td>Женя</td>
+         </tr>
+         </tbody>
+        </table>
+        <script>
+
+// Сортируем массив по второму элементу (по имени)
+const array = [ ['5', 'Вася'], ['10', 'Петя'], ['1', 'Илья'], ['9', 'Маша'], ['12', 'Женя'] ];
+array.sort((a, b) => a[1].localeCompare(b[1]));
+console.log(array);
+
+
+
+         const firstName = document.querySelector("[data-type=string]")
+         console.log(firstName)
+         const table=document.querySelector("table")
+         firstName.addEventListener("click", function(event){
+            //  alert("клик")
+             console.log(table.tBodies[0].rows)
+             newArr=[]
+             el=[]
+             Array.from(table.tBodies[0].rows).forEach(row => {
+                // console.log(row.cells[0].innerText,row.cells[1].innerText)
+                newArr.push([row.cells[0].innerText,row.cells[1].innerText])
+             });
+             console.log(newArr)
+             newArr.sort((a,b)=>a[1].localeCompare(b[1]))
+             console.log(newArr)
+
+
+         })
+
+ 
+
+
+        //  есть массив [ ['5', 'Вася'], ['10', 'Петя'], ['1', 'Илья'], ['9', 'Маша'], ['12', 'Женя']]
+        </script>
+</body>
+</html>

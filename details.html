@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="faq">
+        <h1>Часто задаваемые вопросы</h2>
+        <div>
+            <details><summary><p>Что такое искусственный
+интеллект?</p><img
+src="Icons/p/email-outlined-envelope-back-symbol_icon-icons.com_57846.png"
+alt=""></summary><p>1</p></details>
+             <details><summary><p>Как ИИ влияет на работу?</p><img
+src="Icons/p/email-outlined-envelope-back-symbol_icon-icons.com_57846.png"
+alt=""></summary><p>1</p></details>
+            <details><summary><p>Безопасен ли искусственный
+интеллект?</p><img
+src="Icons/p/email-outlined-envelope-back-symbol_icon-icons.com_57846.png"
+alt=""></summary><p>1</p></details>
+            <details><summary><p>Как ИИ меняет нашу жизнь?</p><img
+src="Icons/p/email-outlined-envelope-back-symbol_icon-icons.com_57846.png"
+alt=""></summary><p>1</p></details>
+            <details><summary><p>Будет ли ИИ умнее людей?</p><img
+src="Icons/p/email-outlined-envelope-back-symbol_icon-icons.com_57846.png"
+alt=""></summary><p>1</p></details>
+        </div>
+    </section>
+    <script>
+        const details=document.querySelectorAll("details")
+        f=true
+    details.forEach(detail => {
+            detail.addEventListener("click" , function(event) {
+                event.preventDefault()
+                // detail.open=true
+                details.forEach (d=>{
+                    if (d!=detail)
+                    d.open=false
+                })
+
+                if (detail.open==true)
+                    detail.open=false
+                else  
+                    detail.open=true
+
+                // details.forEach(item => {
+                    // details.forEach (d=>{
+                    //     console.log ("d ",d.open)
+                    //     d.open=false
+                    // })
+                    // setTimeout(() => {
+                    //     console.log (detail.open)
+                    //     if (detail.open==true && f==true) {
+                    //     f=false
+                    //     // detail.open=true
+                    //     }
+                    //     else {
+                    //     detail.open=false
+                    //     f=true
+
+                    //     }
+
+                    // }, 1000); 
+                    
+                    
+                    // item.open=false
+                    // const summary= item.querySelector("summary")
+                    // const img= summary.querySelector("img")
+                    
+        // img.src="Icons/p/email-outlined-envelope-back-symbol_icon-icons.com_57846.png"
+        
+                // })
+        
+            })
+            // detail.open=true
+        })
+
+    </script>
+</body>
+</html>
