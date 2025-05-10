@@ -87,4 +87,18 @@
         background-color: white;
         color: #506c5d;
     } 
+    #bron form{
+    width: 100%;
+
+}
+#bron h2{
+    font-size: 10vw;
+}
+
+footer {
+    font-size: 3vw;
+}
+#up img{
+   width: 50px;
+}
 }

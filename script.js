@@ -28,11 +28,11 @@ window.addEventListener("scroll", function(event){
 const alaskaL=document.querySelector("#left")
 const alaskaR=document.querySelector("#right")
 window.addEventListener("scroll", function(event){
-   if (scrollY>600){
+   if (scrollY>300){
       alaskaL.style.transform="translateX(-100px)"
       alaskaR.style.transform="translateX(100px)"
    }
-   if (scrollY>1000){
+   if (scrollY>600){
       alaskaL.style.transform="translateX(0)"
       alaskaR.style.transform="translateX(0)"
          }    
